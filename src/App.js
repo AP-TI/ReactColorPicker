@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from './Logo.js';
-import ColorComponent from './ColorComponent.js';
+import { SwatchesPicker } from 'react-color';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Logo color={color}></Logo>
-        <ColorComponent handleChange={(color) => setColor(color.hex)}></ColorComponent>
+        <SwatchesPicker onChange={(color) => setColor(color.hex)}></SwatchesPicker>
       </header>
     </div>
   );
