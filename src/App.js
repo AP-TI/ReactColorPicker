@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo color={color}></Logo>
-        <SwatchesPicker onChange={(color) => setColor(color.hex)}></SwatchesPicker>
+        <Logo color={color}/>
+        <SwatchesPicker onChange={(color) => setColor(color.hex)}/>
       </header>
     </div>
   );
