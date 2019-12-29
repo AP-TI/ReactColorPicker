@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [color, setColor] = useState("#61DAFB");
   return (
-    <div className="App">
+    <div id="App">
       <header className="App-header">
         <Logo color={color}/>
         <SwatchesPicker onChange={(color) => setColor(color.hex)}/>
